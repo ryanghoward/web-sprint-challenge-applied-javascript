@@ -19,10 +19,20 @@ const Card = (article) => {
   //
 
   const cardDiv = document.createElement('div');
+  cardDiv.classList.add('card');
+
   const headlineDiv = document.createElement('div');
+  headlineDiv.classList.add('headline');
+
   const authorDiv = document.createElement('div');
+  authorDiv.classList.add('author');
+
   const imgContainerDiv = document.createElement('div');
-  const img = document.createElement('img');
+  imgContainerDiv.classList.add('img-container');
+
+  const image = document.createElement('img');
+  image.src = article.authorPhoto;
+
   const span = document.createElement('span');
 
 }
