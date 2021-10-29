@@ -73,6 +73,15 @@ const cardAppender = (selector) => {
       info.bootstrap.forEach(e => {
         articleData.appendChild(Card(e))
       })
+      info.technology.forEach(e => {
+        articleData.appendChild(Card(e))
+      })
+      info.jquery.forEach(e => {
+        articleData.appendChild(Card(e))
+      })
+      info.node.forEach(e => {
+        articleData.appendChild(Card(e))
+      })
     })
 
 }
