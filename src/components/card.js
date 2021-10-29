@@ -24,18 +24,23 @@ const Card = (article) => {
   const headlineDiv = document.createElement('div');
   headlineDiv.classList.add('headline');
   headlineDiv.textContent = article.headline;
+  cardDiv.appendChild(headlineDiv);
 
   const authorDiv = document.createElement('div');
   authorDiv.classList.add('author');
+  cardDiv.appendChild(authorDiv);
 
   const imgContainerDiv = document.createElement('div');
   imgContainerDiv.classList.add('img-container');
+  authorDiv.appendChild(imgContainerDiv);
 
   const image = document.createElement('img');
   image.src = article.authorPhoto;
+  imgContainerDiv.appendChild(image);
 
   const span = document.createElement('span');
   span.textContent = `By: ${article.authorName}`;
+  authorDiv.appendChild(span);
 
 }
 
