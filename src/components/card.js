@@ -17,6 +17,14 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+
+  const cardDiv = document.createElement('div');
+  const headlineDiv = document.createElement('div');
+  const authorDiv = document.createElement('div');
+  const imgContainerDiv = document.createElement('div');
+  const img = document.createElement('img');
+  const span = document.createElement('span');
+
 }
 
 const cardAppender = (selector) => {
