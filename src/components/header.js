@@ -39,6 +39,10 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
+
+  const header2 = document.querySelector(`${selector}`);
+  header2.append(Header('LAMBDA TIMES', 'X.XXIX.MMXXI', '420°'));
+
 }
 
 export { Header, headerAppender }
