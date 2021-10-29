@@ -67,6 +67,9 @@ const cardAppender = (selector) => {
       console.log(res);
       const info = res.data.articles
       const articleData = document.querySelector(selector)
+      info.javascript.forEach(e => {
+        articleData.appendChild(Card(e))
+      })
       info.bootstrap.forEach(e => {
         articleData.appendChild(Card(e))
       })
