@@ -46,11 +46,11 @@ const Card = (article) => {
 
   cardDiv.addEventListener('click', function () {
     console.log(article.headlineDiv);
-  })
+  });
 
   return cardDiv;
 
-}
+};
 
 const cardAppender = (selector) => {
   // TASK 6
@@ -64,26 +64,25 @@ const cardAppender = (selector) => {
 
   axios.get('http://localhost:5000/api/articles')
     .then(res => {
-      console.log(res);
-      const info = res.data.articles
-      const articleData = document.querySelector(selector)
+      // console.log(res);
+      const info = res.data.articles;
+      const articleData = document.querySelector(selector);
       info.javascript.forEach(e => {
-        articleData.appendChild(Card(e))
-      })
+        articleData.appendChild(Card(e));
+      });
       info.bootstrap.forEach(e => {
-        articleData.appendChild(Card(e))
-      })
+        articleData.appendChild(Card(e));
+      });
       info.technology.forEach(e => {
-        articleData.appendChild(Card(e))
-      })
+        articleData.appendChild(Card(e));
+      });
       info.jquery.forEach(e => {
-        articleData.appendChild(Card(e))
-      })
+        articleData.appendChild(Card(e));
+      });
       info.node.forEach(e => {
-        articleData.appendChild(Card(e))
-      })
-    })
+        articleData.appendChild(Card(e));
+      });
+    });
+};
 
-}
-
-export { Card, cardAppender }
+export { Card, cardAppender };

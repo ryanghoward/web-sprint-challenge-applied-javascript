@@ -28,7 +28,7 @@ const Tabs = (topics) => {
 
   return newDiv;
 
-}
+};
 
 const tabsAppender = (selector) => {
   // TASK 4
@@ -48,7 +48,7 @@ const tabsAppender = (selector) => {
     })
     .catch(err => {
       console.error(err);
-    })
-}
+    });
+};
 
-export { Tabs, tabsAppender }
+export { Tabs, tabsAppender };

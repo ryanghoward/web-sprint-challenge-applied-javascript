@@ -37,7 +37,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 - [x] Steps 1 and 2 are explained inside the `src/components/header.js` file.
 - [x] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
-- [ ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
+- [x] Steps 5 and 6 are explained inside the `src/components/card.js` file.
 
 **Important Notes:**
 
@@ -50,17 +50,26 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [x] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
+- [x] Check Codegrade for automated feedback.
+- [x] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [x] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+    'DOM' is the Document Object Model. It is a representation of a webpage that we can manipulate to display the desired data without having to hard code every single piece of information.
+
 2. What is an event?
+    An event is an action that the user performs on a webpage. Clicks, Double-clicks, Typing, Scrolling up or down, and Mouse overs are a few examples.
+
 3. What is an event listener?
+    An event listener is when we tell JavaScript to 'listen' for a specified event, such as the ones listed above. When it 'hears' the user perform the specified event, JavaScript will execute whichever function we told it to do when that event occurs.
+
 4. Why would we convert a NodeList into an Array?
+    NodeLists are similar to Arrays in that they represent a collection of DOM elements, also referred to as "Nodes" (EVERYTHING in an HTML document is a Node), but we convert NodeLists to Arrays because we cannot use common array methods like filter, slice, and map on NodeLists.
+
 5. What is a component?
+    Components are reusable and independent chunks of code that serve the same purpose as functions, but return HTML.

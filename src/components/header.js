@@ -30,7 +30,7 @@ const Header = (title, date, temp) => {
   headerDiv.appendChild(tempSpan);
 
   return headerDiv;
-}
+};
 
 const headerAppender = (selector) => {
   // TASK 2
@@ -43,6 +43,6 @@ const headerAppender = (selector) => {
   const header2 = document.querySelector(`${selector}`);
   header2.append(Header('LAMBDA TIMES', 'X.XXIX.MMXXI', '420°'));
 
-}
+};
 
-export { Header, headerAppender }
+export { Header, headerAppender };
