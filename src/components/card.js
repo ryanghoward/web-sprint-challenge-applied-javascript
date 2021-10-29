@@ -23,6 +23,7 @@ const Card = (article) => {
 
   const headlineDiv = document.createElement('div');
   headlineDiv.classList.add('headline');
+  headlineDiv.textContent = article.headline;
 
   const authorDiv = document.createElement('div');
   authorDiv.classList.add('author');
@@ -34,6 +35,7 @@ const Card = (article) => {
   image.src = article.authorPhoto;
 
   const span = document.createElement('span');
+  span.textContent = `By: ${article.authorName}`;
 
 }
 
